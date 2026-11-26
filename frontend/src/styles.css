@@ -1,0 +1,36 @@
+@import 'primeicons/primeicons.css';
+
+:root { --bg: #eef3f8; --brand: #0b6e8a; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: #1f2937; }
+
+.auth-page { min-height: 100vh; display: grid; place-items: center; padding: 1rem;
+  background: linear-gradient(135deg, #0b6e8a 0%, #5fb3c9 100%); }
+.auth-card { width: 26rem; max-width: 100%; }
+.auth-card.wide { width: 44rem; }
+.brand { display: flex; align-items: center; gap: .75rem; padding: 1.25rem 1.5rem 0; color: var(--brand); }
+.brand h1 { font-size: 1.15rem; margin: 0; }
+.brand i { font-size: 1.6rem; }
+.form-col { display: flex; flex-direction: column; gap: .6rem; }
+.form-col h2 { margin: 0 0 .5rem; }
+.center { text-align: center; margin: .25rem 0 0; }
+a { color: var(--brand); font-weight: 600; }
+
+.grid-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.field { display: flex; flex-direction: column; gap: .35rem; }
+.field label { font-size: .85rem; font-weight: 600; }
+.full { grid-column: 1 / -1; }
+.err { color: #dc2626; font-size: .78rem; }
+input.ng-invalid.ng-touched { border-color: #dc2626; }
+.actions { display: flex; justify-content: flex-end; gap: .5rem; }
+.w-full, :host ::ng-deep .w-full { width: 100%; }
+p-password, p-select { width: 100%; }
+
+.page { max-width: 1280px; margin: 0 auto; padding: 1rem; }
+.title { font-weight: 700; font-size: 1.15rem; margin-left: .5rem; }
+.brand-icon { color: var(--brand); font-size: 1.4rem; }
+.who { margin-right: 1rem; color: #4b5563; }
+.panel { margin-top: 1rem; background: #fff; border-radius: 12px; padding: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+.table-head { display: flex; justify-content: space-between; gap: 1rem; }
+
+@media (max-width: 640px) { .grid-form { grid-template-columns: 1fr; } }
